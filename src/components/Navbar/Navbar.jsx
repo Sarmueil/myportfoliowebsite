@@ -34,11 +34,11 @@ const Navbar = () => {
                                 Protfolio
                             </Link>
                         </li>
-                        <li>
+                        {/* <li>
                             <Link to="testimonial" spy={true} smooth={true}>
                                 Testimonials
                             </Link>
-                        </li>
+                        </li> */}
                     </ul>
                 </div>
                 <Link to="contact" spy={true} smooth={true}>

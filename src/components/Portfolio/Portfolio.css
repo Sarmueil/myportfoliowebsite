@@ -1,39 +1,75 @@
-.portfolio {
+.services {
+  padding: 0 3rem 0 3rem;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  height: 70vh;
-
+  height: 30rem;
+  margin-bottom: 8rem;
+  margin-top: 9rem;
+  margin-bottom: 13rem;
+  /* scroll view */
+  padding-top: 3rem;
 }
-/* heading */
-.portfolio span:nth-of-type(1) {
+/* left side */
+.awesome {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  /* gap: 20px; */
+}
+
+.awesome > :nth-child(1) {
   color: var(--black);
-  font-size: 2rem;
+  font-size: 2.5rem;
   font-weight: bold;
 }
-
-.portfolio span:nth-of-type(2) {
+.awesome > :nth-child(2) {
   color: var(--orange);
   font-size: 2.5rem;
   font-weight: bold;
 }
-
-/* slider */
-.portfolio .swiper{
-    overflow: visible!important;
+.awesome > :nth-child(3) {
+  color: var(--gray);
+  font-size: 14px;
+  margin-top: 1rem;
+}
+.s-button {
+  width: 8rem;
+  height: 2rem;
+  margin-top: 1rem;
+}
+/* right sided */
+.cards {
+  position: relative;
+}
+.cards > * {
+  position: absolute;
 }
 
-.portfolio-slider {
-  margin-top: 3rem;
-  width: 100%;
+/* blur */
+.s-blur2 {
+  left: 14rem;
+  top: 8rem;
 }
 
-.portfolio-slider .swiper-slide {
-  width: 20rem;
+.s-blur1 {
+  top: 13rem;
+  left: -18rem;
 }
-.portfolio img {
-  width: 19rem;
-  filter: drop-shadow(-12px 15px 13px rgba(0, 0, 0, 0.25));
-  border-radius: 19px;
+
+@media screen and (max-width: 480px) {
+  .services {
+    margin-top: 0;
+    flex-direction: column;
+    gap: 5rem;
+    height: 66rem;
+    padding: 0;
+  }
+
+  .cards {
+    display: flex;
+    flex-direction: column;
+    gap: 17rem;
+  }
+  .cards > * {
+    position: static;
+  }
 }
