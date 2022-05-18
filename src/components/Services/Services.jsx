@@ -4,7 +4,7 @@ import Card from '../Card/Card';
 import Code from '../../img/codeB.png';
 import ReactIcon from '../../img/react.png'
 import Figma from '../../img/figma.png'
-import Resume from './resume.pdf';
+import Resume from './resume.pdf';   
 import { themeContext } from "../../context";
 import { motion } from "framer-motion"
 
