@@ -6,7 +6,6 @@ import Intro from './components/Intro/Intro';
 import Navbar from './components/Navbar/Navbar';
 import Portfolio from './components/Portfolio/Portfolio';
 import Services from './components/Services/Services';
-import Testimonials from './components/Testimonials/Testimonials';
 import Work from './components/Work/Work';
 import { useContext } from "react";
 import { themeContext } from "./context"
